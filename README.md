@@ -1,1 +1,1 @@
-# -research-track-2-a2
+# Assignment 2 repository for the Research Track II course
