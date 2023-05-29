@@ -1,1 +1,16 @@
-# Assignment 2 repository for the Research Track II course
+# ??? Simulation using Jupyter Notebook
+
+## Research Track II - Assignment II
+Muhammad Ali Haider Dar, _[5046263@studenti.unige.it](mailto:5046263@studenti.unige.it)_
+
+MSc Robotics Engineering, University of Genoa, Italy
+
+Instructor: [Prof. Carmine Recchiuto](https://rubrica.unige.it/personale/UkNDWV1r)
+
+## Overview
+
+## Description
+
+## Running the Project
+
+## Acknowledgements
