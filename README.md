@@ -1,4 +1,4 @@
-# ??? Simulation using Jupyter Notebook
+# Mobile Robot Simulation ROS, Gazebo and Jupyter Notebook
 
 ## Research Track II - Assignment II
 Muhammad Ali Haider Dar, _[5046263@studenti.unige.it](mailto:5046263@studenti.unige.it)_
