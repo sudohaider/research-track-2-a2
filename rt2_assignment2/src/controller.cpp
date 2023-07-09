@@ -14,45 +14,50 @@ void sensorCallback(const sensor_msgs::LaserScan::ConstPtr& msg)
 	bool ob_left=false;
 	bool ob_front=false;
 	bool ob_right=false;
-	for(int i=0;i<8;i++){
-		if (msg->intensities[i]>0.0){
+	for(int i=0;i<8;i++)
+	{
+		if (msg->intensities[i]>0.0)
+		{
 			if(i<3)
 			{
-			ob_left=true;
+				ob_left=true;
 			}
 			else if (i<5)
 			{
-			ob_front=true;
+				ob_front=true;
 			}
 			else {
-			ob_right=true;
+				ob_right=true;
 			}
 			obstacle=true;
 		}
 	}
-	if(obstacle==false){
+	if(obstacle==false)
+	{
 		vel_l.data=1.0;
 		vel_r.data=1.0;
 	}
-	else{
-		if(ob_front & ob_right & ob_left){
-		vel_l.data=1.0;
-		vel_r.data=-1.0;
+	else
+	{
+		if(ob_front & ob_right & ob_left)
+		{
+			vel_l.data=1.0;
+			vel_r.data=-1.0;
 		}
-		else if (ob_right & ob_left){
-		vel_l.data=1.0;
-		vel_r.data=-1.0;
+		else if (ob_right & ob_left)
+		{
+			vel_l.data=1.0;
+			vel_r.data=-1.0;
 		}
-		else if (ob_right){
-		vel_l.data=0.0;
-		vel_r.data=1.0;
+		else if (ob_right)
+		{
+			vel_l.data=0.0;
+			vel_r.data=1.0;
 		}
 		else{
-		vel_l.data=1.0;
-		vel_r.data=0.0;
-		}
-	
-	
+			vel_l.data=1.0;
+			vel_r.data=0.0;
+		}	
 	}
 	pub_left.publish(vel_l);
 	pub_right.publish(vel_r);

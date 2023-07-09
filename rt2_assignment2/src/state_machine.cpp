@@ -5,11 +5,14 @@
 
 bool start = false;
 
-bool user_interface(rt2_assignment1::Command::Request &req, rt2_assignment1::Command::Response &res){
-    if (req.command == "start"){
+bool user_interface(rt2_assignment1::Command::Request &req, rt2_assignment1::Command::Response &res)
+{
+    if (req.command == "start")
+    {
     	start = true;
     }
-    else {
+    else 
+    {
     	start = false;
     }
     return true;
@@ -31,18 +34,19 @@ int main(int argc, char **argv)
    rp.request.y_min = -5.0;
    rt2_assignment1::Position p;
    
-   while(ros::ok()){
-   	ros::spinOnce();
-   	if (start){
-   		client_rp.call(rp);
-   		p.request.x = rp.response.x;
-   		p.request.y = rp.response.y;
-   		p.request.theta = rp.response.theta;
-   		std::cout << "\nGoing to the position: x= " << p.request.x << " y= " <<p.request.y << " theta = " <<p.request.theta << std::endl;
-   		client_p.call(p);
-   		std::cout << "Position reached" << std::endl;
-   	}
-   	// else will include the goal cancellation process. What will happen when goal is cancel. 
+   while(ros::ok())
+   {
+   		ros::spinOnce();
+   		if (start)
+   		{
+	   		client_rp.call(rp);
+	   		p.request.x = rp.response.x;
+	   		p.request.y = rp.response.y;
+	   		p.request.theta = rp.response.theta;
+	   		std::cout << "\nGoing to the position: x= " << p.request.x << " y= " <<p.request.y << " theta = " <<p.request.theta << std::endl;
+	   		client_p.call(p);
+	   		std::cout << "Position reached" << std::endl;
+   		}
    }
    return 0;
 }

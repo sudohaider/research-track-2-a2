@@ -1,9 +1,9 @@
 /**
 * \file state_machine_action.cpp
-* \brief This files contains code for the 'state_machine' node.
-* \author Shozab Abidi
+* \brief This file contains the code for the 'state_machine' node.
+* \author Muhammad Ali Haider Dar
 * \version 1.0
-* \date 25/10/2021
+* \date 09/07/2023
 *
 * \details
 * 
@@ -16,7 +16,7 @@
 *  
 * Description :
 *
-* This node implements the state machine of the project. When the user starts the simulation, it receives a 'string input' as request to the service '/user interface' from     * 'user_interface_action' node. The 'string input' value act as a flag to signal the node to start the state machine loop in which it request another service '/position_server' * which is hosted by 'position_service' node to randomly generate goal coordinates for the robot to follow. Once it receives the goal coordinates in response to the earlier * request to the service, it pass these goal coordinates to an action service '/go_to_point' which is host by 'go_to_point_action.py' node. 
+* This node implements the state machine of the project. When the simulation starts, it receives a 'string input' request from the 'user_interface_action' node. This input acts as a flag to initiate the state machine loop. Within the loop, the node requests goal coordinates from the 'position_service' node using the '/position_server' service. Once the coordinates are received, they are passed to the '/go_to_point' action service hosted by the 'go_to_point_action.py' node for controlling the robot's movements.
 *
 */
 
@@ -66,12 +66,12 @@ typedef actionlib::SimpleActionClient<rt2_assignment1::PositionAction> StateMach
 
 /**
 * \brief The main function of the node 'state_machine'
-* \param argc an integer arguement  
-* \param an string double pointer arguement.
+* \param argc an integer argument  
+* \param an string double pointer argument.
 *
 * \return always return 0 as this function cannot fail.
 *
-* This function initialize the ros node 'state_machine', client for service '/position_server', action client for action service '/go_to_point', advertise the service '/user             * interface' and implement state machine loop for the simulation. 
+* This function initializes the ROS node 'state_machine', creates a client for the '/position_server' service, an action client for the '/go_to_point' action service, advertises the '/user_interface' service, and implements the state machine loop for the simulation.
 * 
 */
 int main(int argc, char **argv)
@@ -82,13 +82,13 @@ int main(int argc, char **argv)
    ros::ServiceServer service= n.advertiseService("/user_interface", user_interface);
    ros::ServiceClient client_rp = n.serviceClient<rt2_assignment1::RandomPosition>("/position_server");
    
-   // Telling the action clinet that we want to spin the thread by default.
+   // Telling the action client that we want to spin the thread by default.
    StateMachineClient ac("/go_to_point", true);
   
     
    ROS_INFO("Waiting for action server to start.");
                                               // wait for the action server to start
-   ac.waitForServer();                        //will wait for infinite time
+   ac.waitForServer();                        // will wait for infinite time
 
    ROS_INFO("Action server started, sending goal."); 
     
@@ -110,8 +110,8 @@ int main(int argc, char **argv)
 	   	    if(count_ == 1)
 		    {
 		    	client_rp.call(rp);
-	   		goal.x = rp.response.x;
-	   		goal.y = rp.response.y;
+	   			goal.x = rp.response.x;
+	   			goal.y = rp.response.y;
 	   	        goal.theta = rp.response.theta;  //this goal is keeps on changing because while is active.
 		        ac.sendGoal(goal);
 		        count_++;
@@ -129,8 +129,7 @@ int main(int argc, char **argv)
 		        goal.theta = rp.response.theta;  //this goal is keeps on changing because while is active.       
 		        ac.sendGoal(goal);
 		        std::cout << "\nGoing to the position: x= " << goal.x << " y= " <<goal.y << " theta = " <<goal.theta << std::endl;
-		    }   
-		    
+		    }
 		}
 	   	else if(start_ == 0)
 	   	{
@@ -140,7 +139,5 @@ int main(int argc, char **argv)
 	   	    start_ = -1;
 	   	}
    }  	
-  
-   
    return 0;
 }
