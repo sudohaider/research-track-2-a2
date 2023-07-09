@@ -5,7 +5,7 @@
 # \brief This file contains code for 'go_to_point' node.
 # \author Muhammad Ali Haider Dar
 # \version 1.0
-# \date 20/05/2023
+# \date 09/07/2023
 #
 # \details
 #
@@ -22,7 +22,7 @@
 # Service : <BR>
 #   ° /go_to_point
 #
-# This node receives the desired goal coordinates as an action service '/go_to_point' request from the 'state_machine' node. Based on the received goal coordinates, it computes the required linear and angular velocities of the robot to reach the target position and then publishes it on topic 'cmd_vel'. Since "/go_to_point" is an action service, it offers the option to cancel the goal at any point during the execution. For this purpose, the goal preempt requested scheme has also been implemented which gets activated when user cancel any goal. Within this scheme, number of cancelled goals are also accumulated.
+# This node receives the desired goal coordinates through an action service request, specifically '/go_to_point', from the 'state_machine' node. Upon receiving the goal coordinates, it calculates the necessary linear and angular velocities required for the robot to reach the target position. These velocities are then published on the 'cmd_vel' topic. The '/go_to_point' action service allows for the cancellation of goals at any point during execution. To accommodate this functionality, a goal preemption scheme has been implemented, which is activated when the user cancels a goal. Additionally, the node keeps track of the number of canceled goals within this scheme.
 #
 
 
@@ -42,7 +42,7 @@ import time
 # robot state variables
 
 ##  A global variable with data structure type 'Point' used for storing the current position of robot.
-position_ = Point() 
+position_ = Point()
 ##  A global variable for storing robot's yaw value.                         
 yaw_ = 0
 ##  Initializing global variable 'position_' with 0.
@@ -196,7 +196,6 @@ def go_straight_ahead(des_pos):
     err_pos = math.sqrt(pow(des_pos.y - position_.y, 2) +
                         pow(des_pos.x - position_.x, 2))
     err_yaw = normalize_angle(desired_yaw - yaw_)
-    #rospy.loginfo(err_yaw)
 
     if err_pos > dist_precision_:
         twist_msg = Twist()
@@ -223,18 +222,16 @@ def go_straight_ahead(des_pos):
 #
 def fix_final_yaw(des_yaw):
     err_yaw = normalize_angle(des_yaw - yaw_)
-    #rospy.loginfo(err_yaw)
     twist_msg = Twist()
     if math.fabs(err_yaw) > yaw_precision_2_:
         twist_msg.angular.z = kp_a*err_yaw
         if twist_msg.angular.z > ub_a:
-            twist_msg.angular.z = ub_a + ub_a*speed_factor_angular_    # I make changes here
+            twist_msg.angular.z = ub_a + ub_a*speed_factor_angular_ 
         elif twist_msg.angular.z < lb_a:
-            twist_msg.angular.z = lb_a  +  lb_a*speed_factor_angular_  # I make changes here
+            twist_msg.angular.z = lb_a  +  lb_a*speed_factor_angular_
     pub_.publish(twist_msg)
     # state change conditions
     if math.fabs(err_yaw) <= yaw_precision_2_:
-        #print ('Yaw error: [%s]' % err_yaw)
         change_state(3)
         
 ##
@@ -295,8 +292,6 @@ class PositionAction(object):
     	# helper variables
     	r = rospy.Rate(1)
     	success = False
-    	#go_to_point(goal)
-    	#feedback = Sim()
     	global no_successful_target_
     	global no_cancelled_target_
     	global t_array	
@@ -309,7 +304,6 @@ class PositionAction(object):
     	# For calculating the time taken by the robot to reach the desired goal. 
     	start = time.time()
     	
-    	#rospy.loginfo('%s: Executing, following target positions x = %i, y = %i, theta = %i' % (self._action_name, desired_position.x, desired_position.y,des_yaw))
     	while True:
     		# check that preempt has not been requested by the client.
     		if self._as.is_preempt_requested():

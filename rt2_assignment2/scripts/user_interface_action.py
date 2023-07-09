@@ -1,9 +1,9 @@
 ## @package rt2_assignment1
 # \file user_interface_action.py
 # \brief This file contains code for 'user_interface' node.
-# \author Shozab Abidi
+# \author Muhammad Ali Haider Dar
 # \version 1.0
-# \date 25/10/2021
+# \date 09/07/2023
 #
 # \details
 #
@@ -29,7 +29,7 @@ simulation_ = "off"
 
 ##
 # \brief This is a callback function of the subscriber for the ROS topic '/user_interface_sig'. 
-# \param msg is the string data  
+# \param msg is the string data
 # \return [none].
 #
 # This is function takes the msg data coming from the  '/user_interface_sig' topic and 
