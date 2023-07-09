@@ -50,7 +50,7 @@ jupyter notebook --allow-root --ip 0.0.0.0
 http://localhost:8888/
 ```
 7. In the Jupyter Notebook hub on the browser, navigate to the directory `{ros_ws}/src/rt2_assignment1/` and open the `scripts.ipynb` file. This notebook contains the user interface of the project. However, do not interact with the script yet, as the simulation environment needs to be set up first.
-8. The "sourcefile" branch contains the required source files for running the project. Clone the branch and install the files in the `/root` directory. Make the source file executable by running the following command:
+8. The "sourcefile" branch contains the required bash file for running the project. Clone the branch and install the file in the `/root` directory. Make the bash file executable by running the following command:
 ```
 chmod +x <file_name>
 ```
