@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceuser__interface__action" kind="namespace" language="Python">
+    <compoundname>user_interface_action</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="user__interface__action_8py_1a60979a91f8b5cb4621a3ca04baeac291" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string user_interface_action.value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <initializer>=  &quot;-1&quot;</initializer>
+        <briefdescription>
+<para>A global variable with datatype &apos;string&apos; used as a flag to start the simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/user_interface_action.py" line="26" column="1" bodyfile="scripts/user_interface_action.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="user__interface__action_8py_1a3a7551628d9c90c46b53a93cf10878cf" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string user_interface_action.simulation_</definition>
+        <argsstring></argsstring>
+        <name>simulation_</name>
+        <initializer>=  &quot;off&quot;</initializer>
+        <briefdescription>
+<para>A Global variable with datatype &apos;string&apos; used as a flag to control the conditions for &apos;while&apos; loop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/user_interface_action.py" line="28" column="1" bodyfile="scripts/user_interface_action.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="user__interface__action_8py_1aa0d5e19a7670afd775a5a831b5851961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def user_interface_action.clbk_user_interface</definition>
+        <argsstring>(msg)</argsstring>
+        <name>clbk_user_interface</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+<para>This is a callback function of the subscriber for the ROS topic &apos;/user_interface_sig&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the string data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none].</para>
+</simplesect>
+This is function takes the msg data coming from the &apos;/user_interface_sig&apos; topic and store it in the global variable &apos;value_.&apos; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/user_interface_action.py" line="38" column="1" bodyfile="scripts/user_interface_action.py" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="user__interface__action_8py_1acca5b4d947fcea87e29e65b3fcded850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def user_interface_action.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+<para>This is a &apos;main&apos; function of user_interface node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>[none].</para>
+</simplesect>
+This function is a &apos;main&apos; function of &apos;user_interface&apos; node. It initializes client for &apos;/user_interface&apos; service hosted by &apos;state_machine&apos; node and subscriber for the &apos;user_interface_sig&apos; topic. Upon user&apos;s request it send the signal to the &apos;state_machine&apos; node to state the &apos;random target position &apos;state simulation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/user_interface_action.py" line="52" column="1" bodyfile="scripts/user_interface_action.py" bodystart="52" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/user_interface_action.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

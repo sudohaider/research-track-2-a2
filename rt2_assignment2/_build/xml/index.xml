@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classgo__to__point__action_1_1_position_action" kind="class"><name>go_to_point_action::PositionAction</name>
+    <member refid="classgo__to__point__action_1_1_position_action_1a80cf62206e30bf68c2e80a198bc31dc0" kind="variable"><name>_feedback</name></member>
+    <member refid="classgo__to__point__action_1_1_position_action_1a9b5f5cb65adddd14ef94c4309157aa61" kind="variable"><name>_result</name></member>
+    <member refid="classgo__to__point__action_1_1_position_action_1afeb06052876cfe125c026f78d3486067" kind="variable"><name>_action_name</name></member>
+    <member refid="classgo__to__point__action_1_1_position_action_1ae5dad388f824d406e5125f53d45fa12b" kind="variable"><name>_as</name></member>
+    <member refid="classgo__to__point__action_1_1_position_action_1ae469fd2b8321fd26753e01d45ab7ec45" kind="function"><name>__init__</name></member>
+    <member refid="classgo__to__point__action_1_1_position_action_1af5038597f0c9d44e089f6e98293c35ca" kind="function"><name>execute_cb</name></member>
+  </compound>
+  <compound refid="namespaceconf" kind="namespace"><name>conf</name>
+    <member refid="conf_8py_1a332f430461432dc465213f884a1e4967" kind="variable"><name>shell</name></member>
+    <member refid="conf_8py_1a45653c983098153b78e33600e39230eb" kind="variable"><name>project</name></member>
+    <member refid="conf_8py_1a33fa97cf51dcb25970fbf53f10159589" kind="variable"><name>copyright</name></member>
+    <member refid="conf_8py_1a637c239d256432248aa8d9f3ab0b8c52" kind="variable"><name>author</name></member>
+    <member refid="conf_8py_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
+    <member refid="conf_8py_1ae475e080536acb271a0a0efe56c3ba42" kind="variable"><name>extensions</name></member>
+    <member refid="conf_8py_1ae850ae634911b713e036b43894fdd525" kind="variable"><name>templates_path</name></member>
+    <member refid="conf_8py_1a7ad48fb6f3e9b129c02346ea0d3527c1" kind="variable"><name>exclude_patterns</name></member>
+    <member refid="conf_8py_1a3117edf4443d9b8c70a9f0f44294ba79" kind="variable"><name>highlight_language</name></member>
+    <member refid="conf_8py_1a10af2a769eb3bd3322e874f677e435b1" kind="variable"><name>source_suffix</name></member>
+    <member refid="conf_8py_1a6fcd7e5236f355b1e1a55f9d95988810" kind="variable"><name>master_doc</name></member>
+    <member refid="conf_8py_1a6c3bfcc1a44546c1c75ce20f55bd0fd6" kind="variable"><name>html_theme</name></member>
+    <member refid="conf_8py_1af4fb5d8851ccaade135c2668dd3ced41" kind="variable"><name>html_static_path</name></member>
+    <member refid="conf_8py_1a8375f4f963de3ac8026eaa9beced9564" kind="variable"><name>intersphinx_mapping</name></member>
+    <member refid="conf_8py_1a8fe7f0d85f975f4ecba5cb6066959a09" kind="variable"><name>todo_include_todos</name></member>
+    <member refid="conf_8py_1acb47d2c0c2904fa7d36b63142533f383" kind="variable"><name>breathe_projects</name></member>
+    <member refid="conf_8py_1a6eba2d2c7ae923054b1c49e686ec89b9" kind="variable"><name>breathe_default_project</name></member>
+    <member refid="conf_8py_1a54585428ce84441199d9dfd7087e2243" kind="variable"><name>breathe_default_members</name></member>
+  </compound>
+  <compound refid="namespacego__to__point" kind="namespace"><name>go_to_point</name>
+    <member refid="go__to__point_8py_1a91dbaab25e6080f6b5dbf82cac6ce75c" kind="variable"><name>position_</name></member>
+    <member refid="go__to__point_8py_1ae444f19eb2019982432760ace036ce03" kind="variable"><name>yaw_</name></member>
+    <member refid="go__to__point_8py_1aa2d0ef255bcf5d5faf9ca2764730fb17" kind="variable"><name>state_</name></member>
+    <member refid="go__to__point_8py_1a57b4090d0abcbcf0bfa2bcb9329d3036" kind="variable"><name>pub_</name></member>
+    <member refid="go__to__point_8py_1a67f95834f0959feb3facd17bc7fa2b38" kind="variable"><name>yaw_precision_</name></member>
+    <member refid="go__to__point_8py_1af74ccf49164d0478ca8343e2031d5813" kind="variable"><name>yaw_precision_2_</name></member>
+    <member refid="go__to__point_8py_1a6a1e4eb20ebd4fce0fc56b0ebfd7a8d5" kind="variable"><name>dist_precision_</name></member>
+    <member refid="go__to__point_8py_1a524106fc7667a0927951dfd89d52d6a7" kind="variable"><name>kp_a</name></member>
+    <member refid="go__to__point_8py_1a7bc498652ca66932e704e738b50c297b" kind="variable"><name>kp_d</name></member>
+    <member refid="go__to__point_8py_1acb4e14986fafe5cb73bb8ad0c178869d" kind="variable"><name>ub_a</name></member>
+    <member refid="go__to__point_8py_1afecad4058844db05d8321199e25b4498" kind="variable"><name>lb_a</name></member>
+    <member refid="go__to__point_8py_1a16c473b9e717200c483d18e66b48152a" kind="variable"><name>ub_d</name></member>
+    <member refid="go__to__point_8py_1a36304a9f313b0579f7fc69fa01695524" kind="function"><name>clbk_odom</name></member>
+    <member refid="go__to__point_8py_1a31ee48e5cae36821049b572a96b7c8be" kind="function"><name>change_state</name></member>
+    <member refid="go__to__point_8py_1ac688bb56fa84763ea2edefc30cae032a" kind="function"><name>normalize_angle</name></member>
+    <member refid="go__to__point_8py_1a9c3011a3065fcbefcc1c5ad8c9979669" kind="function"><name>fix_yaw</name></member>
+    <member refid="go__to__point_8py_1ac8579665c0fbf665f734476554fac37d" kind="function"><name>go_straight_ahead</name></member>
+    <member refid="go__to__point_8py_1a4a406386ca62830c19c93949e923f7bd" kind="function"><name>fix_final_yaw</name></member>
+    <member refid="go__to__point_8py_1ac2587220a4ac9c845bc9c5b0b45d5835" kind="function"><name>done</name></member>
+    <member refid="go__to__point_8py_1aa8c9e45da31814a8cd403b354dbd6ba4" kind="function"><name>go_to_point</name></member>
+    <member refid="go__to__point_8py_1ab92bd6db1ec323a4d795ed6cb40aebe1" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacego__to__point__action" kind="namespace"><name>go_to_point_action</name>
+    <member refid="go__to__point__action_8py_1afd83e8a50982500cb1aea028fa6bd8fb" kind="variable"><name>position_</name></member>
+    <member refid="go__to__point__action_8py_1a7e81c61a8a01745a08f175577455bcb4" kind="variable"><name>yaw_</name></member>
+    <member refid="go__to__point__action_8py_1ac62dc273bd86649b350cb6c1aff4814e" kind="variable"><name>speed_factor_linear_</name></member>
+    <member refid="go__to__point__action_8py_1ab7c711a73524379c2c7051e661b90e25" kind="variable"><name>speed_factor_angular_</name></member>
+    <member refid="go__to__point__action_8py_1a6d09e37099932459bc3e4146007cce86" kind="variable"><name>pub_</name></member>
+    <member refid="go__to__point__action_8py_1aefe65db40d1e74e9aed11a5fffc85d0c" kind="variable"><name>pub_succ_status_</name></member>
+    <member refid="go__to__point__action_8py_1a8817638994ed9d1197c3434128444e04" kind="variable"><name>pub_cancel_status_</name></member>
+    <member refid="go__to__point__action_8py_1a1c1588aac776a5c1be12d47e52101192" kind="variable"><name>pub_task_time_</name></member>
+    <member refid="go__to__point__action_8py_1a71b3bfd8603c6a03f3a5bad51cd309e7" kind="variable"><name>no_successful_target_</name></member>
+    <member refid="go__to__point__action_8py_1a1c927ae3b74fd2970655cde771020a00" kind="variable"><name>no_cancelled_target_</name></member>
+    <member refid="go__to__point__action_8py_1a68b21cc9247a4baf4aff2ca16c237f53" kind="variable"><name>t_array</name></member>
+    <member refid="go__to__point__action_8py_1a99d0c1c8c5e359fcd5f1901e25a86a2d" kind="variable"><name>yaw_precision_</name></member>
+    <member refid="go__to__point__action_8py_1aeaede468f4753c2c476474b35b81754c" kind="variable"><name>yaw_precision_2_</name></member>
+    <member refid="go__to__point__action_8py_1a01a3cd0c013f3c1712758e04b4bc91f4" kind="variable"><name>dist_precision_</name></member>
+    <member refid="go__to__point__action_8py_1a67a9de26fa4f88312f9cc4a8ecedb369" kind="variable"><name>kp_a</name></member>
+    <member refid="go__to__point__action_8py_1acd565e807f177f678d6a12d504d01e60" kind="variable"><name>kp_d</name></member>
+    <member refid="go__to__point__action_8py_1a9cb07d74a9d8087eb04da488c77c118c" kind="variable"><name>ub_a</name></member>
+    <member refid="go__to__point__action_8py_1a156fcdad5d5c28042b46d45d323a9fac" kind="variable"><name>lb_a</name></member>
+    <member refid="go__to__point__action_8py_1a05a9d1a5cc9bd5e985d6ad5247ac985d" kind="variable"><name>ub_d</name></member>
+    <member refid="go__to__point__action_8py_1affe1389e38557b69ee71adea85b846b2" kind="function"><name>clbk_odom</name></member>
+    <member refid="go__to__point__action_8py_1afbecf7f8f9969539cfb70d9430a41fd2" kind="function"><name>clbk_ctrl_speed</name></member>
+    <member refid="go__to__point__action_8py_1ab7ad2629ed9ffbd5d9b7ca9c540d932a" kind="function"><name>change_state</name></member>
+    <member refid="go__to__point__action_8py_1a0bca87c6d45ca63d3152a4e8def72e2a" kind="function"><name>normalize_angle</name></member>
+    <member refid="go__to__point__action_8py_1a18e7fef09d30f59bb91061f4b91f87e6" kind="function"><name>fix_yaw</name></member>
+    <member refid="go__to__point__action_8py_1a7c35034eab524fbff7d05d80fd65ede4" kind="function"><name>go_straight_ahead</name></member>
+    <member refid="go__to__point__action_8py_1a068188471dd5fc0ed3ea371e3a32338a" kind="function"><name>fix_final_yaw</name></member>
+    <member refid="go__to__point__action_8py_1a9fec1cd57aebd720828b5bab962048db" kind="function"><name>done</name></member>
+    <member refid="go__to__point__action_8py_1a33cfc08b34e07f53ddda67d2ab551ba1" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacert2__assignment1" kind="namespace"><name>rt2_assignment1</name>
+  </compound>
+  <compound refid="namespaceuser__interface" kind="namespace"><name>user_interface</name>
+    <member refid="user__interface_8py_1ac26bdb296b6776907b72c17ce5a1b24a" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespaceuser__interface__action" kind="namespace"><name>user_interface_action</name>
+    <member refid="user__interface__action_8py_1a60979a91f8b5cb4621a3ca04baeac291" kind="variable"><name>value_</name></member>
+    <member refid="user__interface__action_8py_1a3a7551628d9c90c46b53a93cf10878cf" kind="variable"><name>simulation_</name></member>
+    <member refid="user__interface__action_8py_1aa0d5e19a7670afd775a5a831b5851961" kind="function"><name>clbk_user_interface</name></member>
+    <member refid="user__interface__action_8py_1acca5b4d947fcea87e29e65b3fcded850" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_c_make_lists_8txt" kind="file"><name>CMakeLists.txt</name>
+  </compound>
+  <compound refid="conf_8py" kind="file"><name>conf.py</name>
+  </compound>
+  <compound refid="go__to__point_8py" kind="file"><name>go_to_point.py</name>
+  </compound>
+  <compound refid="go__to__point__action_8py" kind="file"><name>go_to_point_action.py</name>
+  </compound>
+  <compound refid="user__interface_8py" kind="file"><name>user_interface.py</name>
+  </compound>
+  <compound refid="user__interface__action_8py" kind="file"><name>user_interface_action.py</name>
+  </compound>
+  <compound refid="controller_8cpp" kind="file"><name>controller.cpp</name>
+    <member refid="controller_8cpp_1a8f359d6c41bf1d00132144cc5d4779de" kind="variable"><name>pub_left</name></member>
+    <member refid="controller_8cpp_1ae8cd3dbfbbe664022eae129a51a19104" kind="variable"><name>pub_right</name></member>
+    <member refid="controller_8cpp_1aaa0947d6aad125e58b67aea56c0847d4" kind="function"><name>sensorCallback</name></member>
+    <member refid="controller_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="position__service_8cpp" kind="file"><name>position_service.cpp</name>
+    <member refid="position__service_8cpp_1a10f83119b77a8fbd085a5550955f85ff" kind="function"><name>randMToN</name></member>
+    <member refid="position__service_8cpp_1ab65b9ff5368189ad34fe4989d50742e4" kind="function"><name>myrandom</name></member>
+    <member refid="position__service_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="state__machine_8cpp" kind="file"><name>state_machine.cpp</name>
+    <member refid="state__machine_8cpp_1ab376b87f96a574a793c03c53e75afec8" kind="variable"><name>start</name></member>
+    <member refid="state__machine_8cpp_1a1a9543636935547580c0657f4c7c0c2b" kind="function"><name>user_interface</name></member>
+    <member refid="state__machine_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="state__machine__action_8cpp" kind="file"><name>state_machine_action.cpp</name>
+    <member refid="state__machine__action_8cpp_1add4e8a72af0092f8a6af8fade0922430" kind="typedef"><name>StateMachineClient</name></member>
+    <member refid="state__machine__action_8cpp_1a192e1eea0694845660bb87e0177da9aa" kind="variable"><name>start_</name></member>
+    <member refid="state__machine__action_8cpp_1a9acf5084c965a76d24ec228412256bc3" kind="variable"><name>count_</name></member>
+    <member refid="state__machine__action_8cpp_1a1af6467172efaf288c61934c9b0055f0" kind="variable"><name>Check_</name></member>
+    <member refid="state__machine__action_8cpp_1a1a9543636935547580c0657f4c7c0c2b" kind="function"><name>user_interface</name></member>
+    <member refid="state__machine__action_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir"><name>scripts</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

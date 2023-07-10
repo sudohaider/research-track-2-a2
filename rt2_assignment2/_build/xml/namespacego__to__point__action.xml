@@ -1,0 +1,578 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacego__to__point__action" kind="namespace" language="Python">
+    <compoundname>go_to_point_action</compoundname>
+    <innerclass refid="classgo__to__point__action_1_1_position_action" prot="public">go_to_point_action::PositionAction</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="go__to__point__action_8py_1afd83e8a50982500cb1aea028fa6bd8fb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>int go_to_point_action::position_</definition>
+        <argsstring></argsstring>
+        <name>position_</name>
+        <initializer>=  Point()</initializer>
+        <briefdescription>
+<para>A global variable with data structure type &apos;Point&apos; used for storing the current position of robot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializing global variable &apos;position_&apos; with 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="45" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a7e81c61a8a01745a08f175577455bcb4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int go_to_point_action.yaw_</definition>
+        <argsstring></argsstring>
+        <name>yaw_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+<para>A global variable for storing robot&apos;s yaw value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="47" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1ac62dc273bd86649b350cb6c1aff4814e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int go_to_point_action.speed_factor_linear_</definition>
+        <argsstring></argsstring>
+        <name>speed_factor_linear_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+<para>A global variable for storing the linear speed factor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="51" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1ab7c711a73524379c2c7051e661b90e25" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int go_to_point_action.speed_factor_angular_</definition>
+        <argsstring></argsstring>
+        <name>speed_factor_angular_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+<para>A global variable for storing the angular speed factor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="53" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a6d09e37099932459bc3e4146007cce86" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>go_to_point_action.pub_</definition>
+        <argsstring></argsstring>
+        <name>pub_</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+<para>A global variable for initializing publisher for topic &apos;/cmd_vel&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="55" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1aefe65db40d1e74e9aed11a5fffc85d0c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>go_to_point_action.pub_succ_status_</definition>
+        <argsstring></argsstring>
+        <name>pub_succ_status_</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+<para>A global variable for initializing publisher for topic &apos;/success_goals&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="57" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a8817638994ed9d1197c3434128444e04" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>go_to_point_action.pub_cancel_status_</definition>
+        <argsstring></argsstring>
+        <name>pub_cancel_status_</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+<para>A global variable for initializing publisher for topic &apos;/cancel_goals&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="59" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a1c1588aac776a5c1be12d47e52101192" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>go_to_point_action.pub_task_time_</definition>
+        <argsstring></argsstring>
+        <name>pub_task_time_</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+<para>A global variable for initializing publisher for topic &apos;/task_time&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="61" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a71b3bfd8603c6a03f3a5bad51cd309e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int go_to_point_action.no_successful_target_</definition>
+        <argsstring></argsstring>
+        <name>no_successful_target_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+<para>A global variable for storing the total number of successful goals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="63" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a1c927ae3b74fd2970655cde771020a00" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int go_to_point_action.no_cancelled_target_</definition>
+        <argsstring></argsstring>
+        <name>no_cancelled_target_</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+<para>A global variable for storing the total number of cancelled goals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="65" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a68b21cc9247a4baf4aff2ca16c237f53" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>go_to_point_action.t_array</definition>
+        <argsstring></argsstring>
+        <name>t_array</name>
+        <initializer>=  Int32MultiArray()</initializer>
+        <briefdescription>
+<para>A global variable with data structure type &apos;Int32MultiArray()&apos; for storing the time taken by the robot to complete the tasks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="67" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a99d0c1c8c5e359fcd5f1901e25a86a2d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int go_to_point_action.yaw_precision_</definition>
+        <argsstring></argsstring>
+        <name>yaw_precision_</name>
+        <initializer>=  math.pi / 9</initializer>
+        <briefdescription>
+<para>A global variable with datatype float, used as a parameter for robot&apos;s yaw precision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="72" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1aeaede468f4753c2c476474b35b81754c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int go_to_point_action.yaw_precision_2_</definition>
+        <argsstring></argsstring>
+        <name>yaw_precision_2_</name>
+        <initializer>=  math.pi / 90</initializer>
+        <briefdescription>
+<para>A global variable with datatype float, also used as a parameter for robot&apos;s yaw precision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="74" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a01a3cd0c013f3c1712758e04b4bc91f4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float go_to_point_action.dist_precision_</definition>
+        <argsstring></argsstring>
+        <name>dist_precision_</name>
+        <initializer>=  0.1</initializer>
+        <briefdescription>
+<para>A global variable with datatype float used as a parameter for robot&apos;s distance precision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="76" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a67a9de26fa4f88312f9cc4a8ecedb369" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float go_to_point_action.kp_a</definition>
+        <argsstring></argsstring>
+        <name>kp_a</name>
+        <initializer>=  -3.0</initializer>
+        <briefdescription>
+<para>A global variable used as a parameter for generating robot&apos;s new velocities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="78" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1acd565e807f177f678d6a12d504d01e60" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float go_to_point_action.kp_d</definition>
+        <argsstring></argsstring>
+        <name>kp_d</name>
+        <initializer>=  0.2</initializer>
+        <briefdescription>
+<para>A global variable used as a parameter for generating robot&apos;s new velocities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="80" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a9cb07d74a9d8087eb04da488c77c118c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float go_to_point_action.ub_a</definition>
+        <argsstring></argsstring>
+        <name>ub_a</name>
+        <initializer>=  0.6</initializer>
+        <briefdescription>
+<para>A global variable used as a parameter for generating robot&apos;s new velocities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="82" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a156fcdad5d5c28042b46d45d323a9fac" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float go_to_point_action.lb_a</definition>
+        <argsstring></argsstring>
+        <name>lb_a</name>
+        <initializer>=  -0.5</initializer>
+        <briefdescription>
+<para>A global variable used as a parameter for generating robot&apos;s new velocities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="84" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="go__to__point__action_8py_1a05a9d1a5cc9bd5e985d6ad5247ac985d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float go_to_point_action.ub_d</definition>
+        <argsstring></argsstring>
+        <name>ub_d</name>
+        <initializer>=  0.6</initializer>
+        <briefdescription>
+<para>A global variable used as a parameter for generating robot&apos;s new velocities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="86" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="go__to__point__action_8py_1affe1389e38557b69ee71adea85b846b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.clbk_odom</definition>
+        <argsstring>(msg)</argsstring>
+        <name>clbk_odom</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+<para>This is a callback function of the subscriber &apos;sub_odom&apos; for the ROS topic &apos;/odom&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument with data structure type Odometry <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none]</para>
+</simplesect>
+This function takes the robot&apos;s odometry data coming from the &apos;/odom&apos; topic, extract the position and yaw and then store it in the global variables &apos;position_&apos; and &apos;yaw_&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="98" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="98" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="go__to__point__action_8py_1afbecf7f8f9969539cfb70d9430a41fd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.clbk_ctrl_speed</definition>
+        <argsstring>(msg)</argsstring>
+        <name>clbk_ctrl_speed</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+<para>This is a callback function of the subscriber &apos;ctrl_speed&apos; for the ROS topic &apos;/odom&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument with data structure type &apos;Twist &apos; <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none]</para>
+</simplesect>
+This function takes the velocity factors value coming from the &apos;/control_speed&apos; topic and then store them in the global variables &apos;speed_factor_linear_&apos; and &apos;speed_factor_angular_. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="124" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="124" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="go__to__point__action_8py_1ab7ad2629ed9ffbd5d9b7ca9c540d932a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.change_state</definition>
+        <argsstring>(state)</argsstring>
+        <name>change_state</name>
+        <param>
+          <type>state</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+<para>This is a function used for changing the value of global variable &apos;state_&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument with data type &apos;int &apos; <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none].</para>
+</simplesect>
+This function takes the argument value and assigned it to the global variable &apos;state_&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="140" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="140" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="go__to__point__action_8py_1a0bca87c6d45ca63d3152a4e8def72e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.normalize_angle</definition>
+        <argsstring>(angle)</argsstring>
+        <name>normalize_angle</name>
+        <param>
+          <type>angle</type>
+          <defname>angle</defname>
+        </param>
+        <briefdescription>
+<para>This is a function used for normalizing the orientation angle of robot from goal orientation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument with data type &apos;float&apos; <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Normalized angle value.</para>
+</simplesect>
+This is a function used for normalizing the orientation angle of robot from goal orientation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="154" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="154" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="go__to__point__action_8py_1a18e7fef09d30f59bb91061f4b91f87e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.fix_yaw</definition>
+        <argsstring>(des_pos)</argsstring>
+        <name>fix_yaw</name>
+        <param>
+          <type>des_pos</type>
+          <defname>des_pos</defname>
+        </param>
+        <briefdescription>
+<para>This function adjust the yaw of the robot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>des_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument with datatype &apos;float&apos;. <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none].</para>
+</simplesect>
+This function takes the desired position data as argument. Based on the &apos;yaw error&apos; calculates the required angular velocity and then publishes it in the topic &apos;cmd_vel&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="167" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="167" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="go__to__point__action_8py_1a7c35034eab524fbff7d05d80fd65ede4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.go_straight_ahead</definition>
+        <argsstring>(des_pos)</argsstring>
+        <name>go_straight_ahead</name>
+        <param>
+          <type>des_pos</type>
+          <defname>des_pos</defname>
+        </param>
+        <briefdescription>
+<para>This function calculates the robot&apos;s linear velocity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>des_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument with datatype &apos;float&apos;. <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none].</para>
+</simplesect>
+This function takes the desired position data as argument. Calculate the &apos;desired yaw&apos;, &apos;yaw error&apos; and &apos;position error&apos; and based on these values calculates the required linear velocity and then publishes it in the topic &apos;cmd_vel&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="193" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="193" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="go__to__point__action_8py_1a068188471dd5fc0ed3ea371e3a32338a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.fix_final_yaw</definition>
+        <argsstring>(des_yaw)</argsstring>
+        <name>fix_final_yaw</name>
+        <param>
+          <type>des_yaw</type>
+          <defname>des_yaw</defname>
+        </param>
+        <briefdescription>
+<para>This function adjust the final yaw of the robot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>des_yaw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument with datatype &apos;float&apos;. <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none].</para>
+</simplesect>
+This function takes the desired yaw data as argument. Based on the &apos;yaw error&apos; calculates the final angular velocity require to match goal orientation and then publishes it in the topic &apos;cmd_vel&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="223" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="223" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="go__to__point__action_8py_1a9fec1cd57aebd720828b5bab962048db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.done</definition>
+        <argsstring>()</argsstring>
+        <name>done</name>
+        <briefdescription>
+<para>This is function makes the linear and angular velocities of robot to zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[none]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none].</para>
+</simplesect>
+This is function makes the linear and angular velocities to zero. Generally it use when robot has successfully reach the target or when user have requested it to stop. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="245" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="245" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="go__to__point__action_8py_1a33cfc08b34e07f53ddda67d2ab551ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+<para>This is a main function of the ROS node &apos;go_to_point&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[none]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none].</para>
+</simplesect>
+This function is a &apos;main&apos; function of &apos;go_to_point&apos; node. It initializes the subscribers for &apos;/odom&apos; and &apos;/control_speed&apos; topics, publishers for &apos;/cmd_vel&apos;, &apos;success_goals&apos;, &apos;/cancel_goal&apos;, &apos;task_time&apos; topics and lastly call the <ref refid="classgo__to__point__action_1_1_position_action" kindref="compound">PositionAction</ref> service. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="364" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="364" bodyend="378"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/go_to_point_action.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

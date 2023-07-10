@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgo__to__point__action_1_1_position_action" kind="class" language="Python" prot="public">
+    <compoundname>go_to_point_action::PositionAction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgo__to__point__action_1_1_position_action_1a80cf62206e30bf68c2e80a198bc31dc0" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>go_to_point_action.PositionAction::_feedback</definition>
+        <argsstring></argsstring>
+        <name>_feedback</name>
+        <initializer>=  rt2_assignment1.msg.PositionFeedback()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="266" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgo__to__point__action_1_1_position_action_1a9b5f5cb65adddd14ef94c4309157aa61" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>go_to_point_action.PositionAction::_result</definition>
+        <argsstring></argsstring>
+        <name>_result</name>
+        <initializer>=  rt2_assignment1.msg.PositionResult()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="267" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgo__to__point__action_1_1_position_action_1afeb06052876cfe125c026f78d3486067" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>go_to_point_action.PositionAction::_action_name</definition>
+        <argsstring></argsstring>
+        <name>_action_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="277" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgo__to__point__action_1_1_position_action_1ae5dad388f824d406e5125f53d45fa12b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>go_to_point_action.PositionAction::_as</definition>
+        <argsstring></argsstring>
+        <name>_as</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="278" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgo__to__point__action_1_1_position_action_1ae469fd2b8321fd26753e01d45ab7ec45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.PositionAction.__init__</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>This is a constructor function of the class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument of type &apos;String&apos; <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[none].</para>
+</simplesect>
+This is function defines the action service &apos;go_to_point&apos;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="276" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="276" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classgo__to__point__action_1_1_position_action_1af5038597f0c9d44e089f6e98293c35ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def go_to_point_action.PositionAction.execute_cb</definition>
+        <argsstring>(self, goal)</argsstring>
+        <name>execute_cb</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>goal</type>
+          <defname>goal</defname>
+        </param>
+        <briefdescription>
+<para>This is a callback function for the service &apos;go_to_point&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>goal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument with custom define data structure type &apos;Position&apos;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>trure always. <linebreak/>
+</para>
+</simplesect>
+This function execute when request is recieved from the client with argument goal position. After recieving the goal position it starts the internal state mahcine for driving the robot. This function also updates and publishes some global variables which highlight some key insights such as number successful and cancelled goals, and list of all the recordded time taken by the robot to reach targets. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/go_to_point_action.py" line="291" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="291" bodyend="354"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class defines the &apos;go_to_point&apos; action service through which &apos;state_machine&apos; node assign it goals. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class defines the &apos;go_to_point&apos; action service through which &apos;state_machine&apos; node assign it goals. It also controls the internal state_machine of &apos;go_to_point&apos; node which drives the robot from current position to goal position. During the simulation based on the robot state it generates and publish feedbacks and insights which is use by jupyter notebook&apos;s user interface script. <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>go_to_point_action.PositionAction</label>
+        <link refid="classgo__to__point__action_1_1_position_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>go_to_point_action.PositionAction</label>
+        <link refid="classgo__to__point__action_1_1_position_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/go_to_point_action.py" line="264" column="1" bodyfile="scripts/go_to_point_action.py" bodystart="264" bodyend="355"/>
+    <listofallmembers>
+      <member refid="classgo__to__point__action_1_1_position_action_1ae469fd2b8321fd26753e01d45ab7ec45" prot="public" virt="non-virtual"><scope>go_to_point_action::PositionAction</scope><name>__init__</name></member>
+      <member refid="classgo__to__point__action_1_1_position_action_1afeb06052876cfe125c026f78d3486067" prot="private" virt="non-virtual"><scope>go_to_point_action::PositionAction</scope><name>_action_name</name></member>
+      <member refid="classgo__to__point__action_1_1_position_action_1ae5dad388f824d406e5125f53d45fa12b" prot="private" virt="non-virtual"><scope>go_to_point_action::PositionAction</scope><name>_as</name></member>
+      <member refid="classgo__to__point__action_1_1_position_action_1a80cf62206e30bf68c2e80a198bc31dc0" prot="private" virt="non-virtual"><scope>go_to_point_action::PositionAction</scope><name>_feedback</name></member>
+      <member refid="classgo__to__point__action_1_1_position_action_1a9b5f5cb65adddd14ef94c4309157aa61" prot="private" virt="non-virtual"><scope>go_to_point_action::PositionAction</scope><name>_result</name></member>
+      <member refid="classgo__to__point__action_1_1_position_action_1af5038597f0c9d44e089f6e98293c35ca" prot="public" virt="non-virtual"><scope>go_to_point_action::PositionAction</scope><name>execute_cb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
