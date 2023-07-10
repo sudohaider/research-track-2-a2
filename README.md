@@ -15,7 +15,7 @@ Before proceeding with the instructions, it is important to have ROS1 installed 
 
 To successfully deploy the code available in the "main" branch, follow the steps below:
 
-1. Install the code in the ROS workspace at {ros_ws}/src and run the following commands to build the workspace:
+1. Install the code in the ROS workspace at `{ros_ws}/src` and run the following commands to build the workspace:
     * Run the following command to build the workspace:
       ```
       catkin_make
