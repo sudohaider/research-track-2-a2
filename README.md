@@ -9,7 +9,7 @@ Instructor: [Prof. Carmine Recchiuto](https://rubrica.unige.it/personale/UkNDWV1
 
 ## Installation
 
-The repository provided includes packages and a simulation environment for controlling a mobile robot in the Gazebo simulator. The main focus of this project is to improve the user interface, which has been developed in Jupyter Notebook. This assignment serves as an extension of its previous iteration, assignment 1, which can be accessed at: https://github.com/alihaidersays/research-track-2-a1.
+The repository provided includes packages and a simulation environment for controlling a mobile robot in the Gazebo simulator. The main focus of this project is to improve the user interface, which has been developed in Jupyter Notebook. This assignment serves as an extension of its previous iteration, which can be accessed [here](https://github.com/sudohaider/research-track-2-a1).
 
 Before proceeding with the instructions, it is important to have ROS1 installed on your system. Please ensure that you have it installed before proceeding. The repository consists of three branches. The first branch is named "main", and the second branch is named "sphinx". Both branches contain the same project but with different styles of documentation. The "main" branch utilizes Doxygen for documentation, while the "sphinx" branch utilizes the Sphinx tool.
 
